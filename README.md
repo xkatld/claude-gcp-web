@@ -7,6 +7,7 @@ apt update -y
 apt install python3 python3-pip -y
 ```
 ```shell
+rm /usr/lib/python3.12/EXTERNALLY-MANAGED
 pip3 install flask anthropic[vertex] python-dotenv
 ```
 # 安装gcloud CLI
