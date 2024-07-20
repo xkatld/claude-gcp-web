@@ -16,7 +16,7 @@ apt install apt-transport-https ca-certificates gnupg curl sudo -y
 curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo gpg --dearmor -o /usr/share/keyrings/cloud.google.gpg
 echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
 apt install google-cloud-cli -y
-c
+```
 # 配置gcloud CLI
 登录到您的 Google Cloud 账户：
 ```shell
@@ -33,5 +33,15 @@ cloud auth application-default login
 ```shell
 gcloud config set project <项目ID>
 ```
-
-
+# git 代码
+```shell
+apt update -y
+apt install git -y
+git clone https://github.com/xkatld/claude-gcp-web.git claudeweb
+cd claudeweb
+```
+请修改'app.py'，'.env'文件
+启动即可，默认端口为：14514
+```shell
+python3 app.py
+```
