@@ -26,17 +26,17 @@ apt install google-cloud-cli -y
 ```shell
 gcloud auth login
 ```
+设置正确的项目：
+确保您使用的是正确的 Google Cloud 项目。运行：
+```shell
+gcloud config set project <项目ID>
+```
 按照提示在浏览器中完成登录。
 设置应用默认凭证（Application Default Credentials，ADC）：
 ```shell
 gcloud auth application-default login
 ```
 这会在您的本地机器上设置默认凭证。
-设置正确的项目：
-确保您使用的是正确的 Google Cloud 项目。运行：
-```shell
-gcloud config set project <项目ID>
-```
 # git 代码
 ```shell
 apt update -y
