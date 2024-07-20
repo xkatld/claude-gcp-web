@@ -29,7 +29,7 @@ gcloud auth login
 按照提示在浏览器中完成登录。
 设置应用默认凭证（Application Default Credentials，ADC）：
 ```shell
-cloud auth application-default login
+gcloud auth application-default login
 ```
 这会在您的本地机器上设置默认凭证。
 设置正确的项目：
